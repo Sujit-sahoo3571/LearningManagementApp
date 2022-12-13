@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="course"
+            type="com.iamwithinyou.mvvmcoursenoteapp.model.Course" />
+    </data>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{course.courseName}"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:id="@+id/tv_courseName"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{course.coursePrice}"
+        android:textSize="18sp"
+        android:textColor="@color/teal_200"
+        android:id="@+id/tv_coursePrice"
+        />
+    
+
+</LinearLayout>
+    
+</layout>
